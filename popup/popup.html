@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrlScan.io</title>
+    <script src="popup.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="popup.css"> 
+</head>
+<body>
+    <div id="container">
+        <h1>
+            <img src="/images/urlSCAN.png">
+            <span><span class="h1-p1">urlscan.</span><span class="h1-p2">io</span></span>
+        </h1>
+
+        <form id="urlForm">
+            <input id="url" type="text" placeholder="https://github.com" name="url" autocomplete="off" value="" autofocus="">
+            <button id="submitButton" type="submit">
+                <span class="button__text">Scan</span>
+            </button>
+            <div class="options" id="optionsButton">
+                <button class="options-button" id="go-to-options">Options</button>
+            </div>
+        </form>
+        <div id="urlResults" class="results">
+            <p id="urlResultsText">
+            </p>
+        </div>
+    </div>
+</body>
+</html>

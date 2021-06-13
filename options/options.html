@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <script defer src="options.js"></script>
+    <link rel="stylesheet" href="options.css"> 
+</head>
+<body>
+    <div id="container">
+        <h1>
+            <span><span class="h1-p1">Options</span>
+        </h1>
+        <div id="settingsForm">
+            <form id="optionsForm">
+                <p>
+                    <label>API Key</label>
+                    <input id="urlScanKey" type="text" placeholder="" name="urlScanKey" autocomplete="off" value="" autofocus="">
+                </p>
+                <p>
+                    <label for="scanMode">Scan Mode</label>
+                    <select name="scanMode" id="scanMode">
+                    <option value="public">Public</option>
+                    <option value="unlisted">Unlisted</option>
+                    <option value="private">Private</option>
+                    </select>
+                </p>
+                <p>
+                    <button id="save" type="submit">
+                        <span class="optionsButton">Save</span>
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div id="currentSettings">
+            <h1>Current Settings</h1>
+                <p>
+                    <label>Current API Key</label>
+                    <input id="currentKey" type="text" name="currentKey" value="" disabled>
+                </p>
+                <p>
+                    <label>Current Scan Mode</label>
+                    <input id="currentScanMode" type="text" name="currentScanMode" value="" value="Public" disabled>
+                </p>
+        </div>
+        <div id="about">
+            <h1>
+                <img src="/images/urlSCAN.png">
+                <span><span class="h1-p1">urlscan.</span><span class="h1-p2">io</span></span>
+            </h1>
+            <p>I am not affiliated with urlscan.io in any way. I just really love the platform they created and i am thankful it is free.</p>
+            <p>Please consider supporting urlscan.io at the links below</p>
+            <a href="https://urlscan.io/about/">Learn More</a>
+            <a href="https://urlscan.io/products/">View Products</a>
+        </div>
+    </div>
+</body>
+</html>

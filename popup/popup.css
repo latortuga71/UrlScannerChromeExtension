@@ -1,0 +1,155 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1>span {
+    margin: 0 0 0 .5em;
+}
+
+.h1-p1 {
+    color:#2c3e50;
+}
+
+.h1-p2 {
+    /*color:#f85a10;*/
+    color:#18bc9c;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    border: 1px solid grey;
+    background: white;
+    border-radius: 4px;
+    padding: .3em;
+}
+
+form input:focus {
+    border: 1px solid white;
+}
+
+form input:hover {
+    border: 1px solid black;
+}
+
+form input:disabled {
+    background: #ccc;
+}
+
+form button {
+    position: relative;
+    padding: 8px 16px;
+    background: #f16e32;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #c55d2d;
+    color: white;
+    border:none;
+}
+
+form button:active {
+    background:  #f16e32;
+    border:none;
+}
+
+.button__text{
+    font:bold 15px 'Quicksand', sans-serif;
+    color: white;
+    transition: all 0.2s;
+}
+
+.button--loading .button__text{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform:rotate(0turn);
+    }
+    to {
+        transform:rotate(1turn);
+    }
+}
+
+#urlResults {
+
+}
+
+.results {
+    text-align: center;
+}
+
+.results p {
+    text-align: center;
+    color: white;
+    font:bold 15px 'Quicksand', sans-serif;
+    position: relative;
+    /*padding: 8px 16px;*/
+    border:none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.options {
+    text-align: center;
+}
+.options-button {
+    font:bold 15px 'Quicksand', sans-serif;
+    color: white;
+    position: relative;
+    padding: 8px 16px;
+    background: #2180ec;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.options-button:hover {
+    background: #156aca;
+    color: white;
+}
+
+.options-button:active {
+    background: #156aca;
+}
+
+input[type="text"]
+{
+    font:bold 15px 'Quicksand', sans-serif;
+}

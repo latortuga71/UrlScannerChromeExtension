@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1>span {
+    margin: 0 0 0 .5em;
+}
+
+.h1-p1 {
+    color:#2c3e50;
+}
+
+.h1-p2 {
+    color:#18bc9c;
+}
+img{
+    width: auto;
+    height: auto;
+}
+
+#settingsForm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form input {
+    border: 1px solid grey;
+    background: white;
+    border-radius: 4px;
+    padding: .3em;
+}
+form select {
+    border: 1px solid grey;
+    background: white;
+    border-radius: 4px;
+    padding: .3em;
+}
+
+#currentSettings {
+    text-align: center;
+}
+
+input[type="text"]
+{
+    font:bold 15px 'Quicksand', sans-serif;
+}
+
+label {
+    font:bold 15px 'Quicksand', sans-serif;
+}
+
+#about {
+    text-align: center;
+}

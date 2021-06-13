@@ -1,0 +1,26 @@
+{
+    "name": "Unofficial UrlScan.io extension",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "An extension to scan any url using urlscan.io rest api",
+    "icons": {
+      "16":"/images/urlSCAN.png",
+      "128":"/images/urlSCAN.png"
+    },
+    "background": {
+        "persistent":true,
+        "scripts":["background.js"]
+    },
+    "options_page":"options/options.html",
+    "options_ui": {
+        "page": "options/options.html",
+        "open_in_tab": true
+      },
+    "permissions": ["contextMenus","storage","tabs","idle","notifications","https://urlscan.io/*"],
+    "browser_action": {
+        "default_title":"Urlscan.io",
+        "default_popup":"/popup/popup.html",
+        "default_icon":"/images/urlSCAN.png"
+  }
+}
+  
