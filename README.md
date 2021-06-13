@@ -1,3 +1,3 @@
 # UrlScanner Chrome Extensions
 
-## Runs via urlscan.io apit
+## Runs via urlscan.io api
