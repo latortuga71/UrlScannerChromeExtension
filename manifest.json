@@ -1,8 +1,8 @@
 {
-    "name": "Unofficial UrlScan.io extension",
+    "name": "UrlScanner",
     "version": "0.1",
     "manifest_version": 2,
-    "description": "An extension to scan any url using urlscan.io rest api",
+    "description": "An extension to scan any url using the urlscan.io rest api",
     "icons": {
       "16":"/images/urlSCAN.png",
       "128":"/images/urlSCAN.png"
