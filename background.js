@@ -240,7 +240,7 @@ function loopForUrlResponseFromLinkContext(resultsUrl){
         console.log(resp);
         console.log(resp.status)
         if (resp.status == 404){
-            if (globalLoopCounter < 5){
+            if (globalLoopCounter < 15){
                 globalLoopCounter++;
                 setTimeout(() => {
                     loopForUrlResponseFromLinkContext(resultsUrl)
