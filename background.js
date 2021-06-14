@@ -133,12 +133,12 @@ function loopForUrlResponseFromPopup(resultsUrl,sendResp){
     }
     fetch(resultsUrl,options).then(resp => {
         if (resp.status == 404){
-            if (globalLoopCounter < 5){
+            if (globalLoopCounter < 15){
                 globalLoopCounter++;
                 setTimeout(() => {
                     loopForUrlResponseFromPopup(resultsUrl,sendResp)
-                    console.log("url not ready, sleep 5 seconds and try again")
-                },5000) // after first iteration sleep 5 seconds
+                    console.log("url not ready, sleep 15 seconds and try again")
+                },15000) // after first iteration sleep 5 seconds
                 return;
             } else {
                 globalLoopCounter++;
@@ -244,8 +244,8 @@ function loopForUrlResponseFromLinkContext(resultsUrl){
                 globalLoopCounter++;
                 setTimeout(() => {
                     loopForUrlResponseFromLinkContext(resultsUrl)
-                    console.log("url not ready, sleep 5 seconds and try again")
-                },5000) // after first iteration sleep 5 seconds
+                    console.log("url not ready, sleep 15 seconds and try again")
+                },15000) // after first iteration sleep 5 seconds
                 return;
             } else {
                 globalLoopCounter++;

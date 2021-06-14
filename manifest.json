@@ -1,6 +1,6 @@
 {
     "name": "UrlScanner",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 2,
     "description": "An extension to scan any url using the urlscan.io rest api",
     "icons": {
@@ -16,7 +16,7 @@
         "page": "options/options.html",
         "open_in_tab": true
       },
-    "permissions": ["contextMenus","storage","tabs","idle","notifications","https://urlscan.io/*"],
+    "permissions": ["contextMenus","storage","tabs","notifications","https://urlscan.io/*"],
     "browser_action": {
         "default_title":"Urlscan.io",
         "default_popup":"/popup/popup.html",
