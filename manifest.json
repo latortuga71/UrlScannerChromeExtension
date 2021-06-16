@@ -16,7 +16,7 @@
         "page": "options/options.html",
         "open_in_tab": true
       },
-    "permissions": ["contextMenus","storage","tabs","notifications","https://urlscan.io/*"],
+    "permissions": ["contextMenus","storage","notifications","https://urlscan.io/*"],
     "browser_action": {
         "default_title":"Urlscan.io",
         "default_popup":"/popup/popup.html",
