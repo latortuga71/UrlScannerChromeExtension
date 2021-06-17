@@ -115,6 +115,7 @@ function doUrlScanFromPopup(targetUrl,sendResp){
         return resp.json();})
         .then(respData => {
             console.log(respData.api);
+            SendStartScanNotification(targetUrl);
             setTimeout(()=> {
                 loopForUrlResponseFromPopup(respData.api,sendResp);
             },15000)
@@ -217,6 +218,7 @@ function doUrlScanFromLinkContext(targetUrl){
         } // if successfully posted data sleep 15 seconds then run url loop
         return resp.json();})
         .then(respData => {
+            SendStartScanNotification(targetUrl);
             console.log(respData.api);
             setTimeout(()=> {
                 loopForUrlResponseFromLinkContext(respData.api);
@@ -306,6 +308,17 @@ function GetScanModeFromStorage() {
         console.log('set custom')
         globalScanMode = result.scanMode;
     })
+}
+
+
+function SendStartScanNotification(targetUrl){
+    chrome.notifications.create("", {
+        type:    "basic",
+        iconUrl: "/images/urlSCAN.png",
+        title:   "Url Scan Started!",
+        message: "Started Scan on " + targetUrl,
+        contextMessage: "Scanning..."
+    }, function(){});
 }
 
 function SendSuccessNotification(urlResultStr,verdict){
